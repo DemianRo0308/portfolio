@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temin Ro | Data & Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card { background: #1e293b; border: 1px solid #334155; transition: all 0.3s ease; }
+        .card:hover { border-color: #38bdf8; transform: translateY(-4px); box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2); }
+    </style>
+</head>
+<body class="leading-relaxed antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter text-sky-400">TEMIN.RO</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#skills" class="hover:text-white transition">Skills</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 pt-40 pb-20">
+        
+       <!-- Hero Section Update -->
+<section id="about" class="mb-40 flex flex-col md:flex-row items-center gap-16">
+    <div class="w-56 h-56 rounded-3xl overflow-hidden bg-slate-800 border-2 border-slate-700 shrink-0 shadow-2xl">
+        <img src="profile.jpg" alt="Temin Ro" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+    </div>
+    <div>
+        <h1 class="text-6xl font-extrabold mb-6 tracking-tight">Hi, I'm <span class="gradient-text">Temin Ro</span>.</h1>
+        <p class="text-xl text-slate-400 mb-8 leading-relaxed max-w-2xl">
+            A <span class="text-white font-semibold">Data & Information Science Student</span> at the <span class="text-sky-400">University of Wisconsin-Madison</span>. 
+            Focused on bridging data-driven insights with scalable engineering solutions, with a deep interest in <span class="text-white">Distributed Systems</span> and <span class="text-white">Data Architecture</span>.
+        </p>
+        <div class="flex gap-5 items-center">
+            <a href="https://www.linkedin.com/in/temin-ro-0308d/" target="_blank" class="text-slate-400 hover:text-sky-400 transition text-2xl"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank" class="text-slate-400 hover:text-sky-400 transition text-2xl"><i class="fab fa-github"></i></a>
+            <a href="mailto:teminro@gmail.com" class="ml-4 px-6 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-full text-sm font-bold transition border border-slate-600">Contact Me</a>
+        </div>
+    </div>
+</section>
+        <!-- Technical Proficiency -->
+        <section id="skills" class="mb-40">
+            <h2 class="text-3xl font-bold mb-12 flex items-center"><span class="w-12 h-[2px] bg-sky-500 mr-6"></span>Technical Proficiency</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 card rounded-2xl">
+                    <h3 class="text-white text-lg font-bold mb-4 flex items-center"><i class="fas fa-server mr-3 text-sky-400"></i>Infrastructure</h3>
+                    <ul class="text-slate-400 space-y-3 text-sm">
+                        <li>Docker & Containerization</li>
+                        <li>Linux System Admin (Bash)</li>
+                        <li>CI/CD Workflows</li>
+                        <li>Cloud Architecture (AWS/GCP)</li>
+                    </ul>
+                </div>
+                <div class="p-8 card rounded-2xl">
+                    <h3 class="text-white text-lg font-bold mb-4 flex items-center"><i class="fas fa-database mr-3 text-purple-400"></i>Data Engineering</h3>
+                    <ul class="text-slate-400 space-y-3 text-sm">
+                        <li>Apache Kafka & Streaming</li>
+                        <li>NoSQL (Cassandra, MongoDB)</li>
+                        <li>Distributed Systems Design</li>
+                        <li>ETL Pipeline Development</li>
+                    </ul>
+                </div>
+                <div class="p-8 card rounded-2xl">
+                    <h3 class="text-white text-lg font-bold mb-4 flex items-center"><i class="fas fa-code mr-3 text-emerald-400"></i>Languages</h3>
+                    <ul class="text-slate-400 space-y-3 text-sm">
+                        <li>Python (Pandas, PySpark)</li>
+                        <li>Java / Spring Boot</li>
+                        <li>SQL & Query Optimization</li>
+                        <li>C / C++ (System Level)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="mb-40">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-3xl font-bold flex items-center"><span class="w-12 h-[2px] bg-sky-500 mr-6"></span>Featured Projects</h2>
+                <a href="#" class="text-slate-400 hover:text-sky-400 text-sm font-medium">View GitHub <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+            <div class="grid grid-cols-1 gap-10">
+                <!-- Kafka Project -->
+                <div class="card p-10 rounded-3xl flex flex-col md:flex-row gap-10 items-center">
+                    <div class="md:w-2/5 bg-slate-900 rounded-2xl aspect-video flex items-center justify-center border border-slate-800 shadow-inner">
+                        <i class="fas fa-stream text-6xl text-slate-800 transition duration-500"></i>
+                    </div>
+                    <div class="md:w-3/5">
+                        <h3 class="text-2xl font-bold mb-3">Distributed Messaging with Kafka</h3>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            Implemented a high-throughput messaging system using Kafka and Docker. Optimized data distribution strategies across clusters and focused on system fault tolerance and partition management.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-1 bg-slate-800 text-sky-400 text-xs font-semibold rounded-md border border-slate-700">Kafka</span>
+                            <span class="px-4 py-1 bg-slate-800 text-sky-400 text-xs font-semibold rounded-md border border-slate-700">Docker</span>
+                            <span class="px-4 py-1 bg-slate-800 text-sky-400 text-xs font-semibold rounded-md border border-slate-700">Java</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section Update -->
+<section id="education" class="mb-40">
+    <h2 class="text-3xl font-bold mb-12 flex items-center"><span class="w-12 h-[2px] bg-sky-500 mr-6"></span>Education</h2>
+    <div class="border-l border-slate-800 ml-3 pl-10 space-y-12">
+        <div class="relative">
+            <div class="absolute -left-[44.5px] top-1 w-2 h-2 rounded-full bg-sky-500 outline outline-[10px] outline-[#0f172a]"></div>
+            <h4 class="font-bold text-xl text-white">University of Wisconsin-Madison</h4>
+            <p class="text-sky-400 font-medium mb-3 italic text-sm">
+                B.S. in Data Science & Information Science | 2022 - Present
+            </p>
+            <p class="text-slate-400 text-sm leading-relaxed max-w-3xl">
+                Currently exploring the intersection of large-scale data processing and information organization. 
+                Actively learning to build resilient infrastructures for high-velocity data environments.
+            </p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer id="contact" class="bg-slate-950 border-t border-slate-900 py-20 text-center">
+        <h2 class="text-3xl font-bold mb-6 text-white italic">"Bridging Theory and Industry Practice"</h2>
+        <div class="flex justify-center gap-8 mb-12">
+            <a href="https://www.linkedin.com/in/temin-ro-0308d/" target="_blank" class="text-slate-400 hover:text-white transition"><i class="fab fa-linkedin mr-2"></i> LinkedIn</a>
+            <a href="mailto:teminro@gmail.com" class="text-slate-400 hover:text-white transition"><i class="fas fa-envelope mr-2"></i> Email</a>
+        </div>
+        <p class="text-xs text-slate-700 uppercase tracking-widest">© 2026 Designed & Built by Temin Ro</p>
+    </footer>
+
+</body>
+</html>
