@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temin Ro | Data & Information Science at UW-Madison</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; scroll-behavior: smooth; }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card { background: #1e293b; border: 1px solid #334155; transition: all 0.3s ease; }
+        .card:hover { border-color: #38bdf8; transform: translateY(-4px); box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2); }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #38bdf8; transition: width 0.3s; }
+        .nav-link:hover::after { width: 100%; }
+        .tech-badge { @apply px-3 py-1 bg-slate-800 text-sky-400 text-[10px] font-bold uppercase rounded border border-slate-700; }
+        .chat-container { height: 380px; overflow-y: auto; }
+    </style>
+</head>
+<body class="leading-relaxed antialiased">
+
+    <nav class="fixed top-0 w-full z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter text-sky-400 uppercase">Temin Ro</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="nav-link hover:text-white transition text-xs uppercase tracking-widest">About</a>
+                <a href="#projects" class="nav-link hover:text-white transition text-xs uppercase tracking-widest">Projects</a>
+                <a href="#skills" class="nav-link hover:text-white transition text-xs uppercase tracking-widest">Skills</a>
+                <a href="#education" class="nav-link hover:text-white transition text-xs uppercase tracking-widest">Education</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 pt-40 pb-20">
+        
+     <section id="about" class="mb-40 flex flex-col md:flex-row items-center gap-16">
+    <div class="w-56 h-56 rounded-3xl overflow-hidden bg-slate-800 border-2 border-slate-700 shrink-0 shadow-2xl">
+        <img src="profile.jpg" alt="Temin Ro" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+    </div>
+    <div>
+        <h1 class="text-6xl font-extrabold mb-6 tracking-tight">Hi, I'm <span class="gradient-text">Temin Ro</span>.</h1>
+        <p class="text-xl text-slate-400 mb-8 leading-relaxed max-w-2xl">
+            A <span class="text-white font-semibold">Data & Information Science Student</span> at the <span class="text-sky-400">University of Wisconsin-Madison</span>. 
+            Focused on bridging data-driven insights with scalable engineering solutions, with a deep interest in <span class="text-white">Distributed Systems</span> and <span class="text-white">Data Architecture</span>.
+        </p>
+        <div class="flex gap-5 items-center">
+            <a href="https://www.linkedin.com/in/temin-ro-0308d/" target="_blank" class="text-slate-400 hover:text-sky-400 transition text-2xl"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank" class="text-slate-400 hover:text-sky-400 transition text-2xl"><i class="fab fa-github"></i></a>
+            <a href="mailto:teminro@gmail.com" class="ml-4 px-6 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-full text-sm font-bold transition border border-slate-600">Contact Me</a>
+        </div>
+    </div>
+</section>
+
+        <section id="projects" class="mb-40">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-2xl font-bold flex items-center"><span class="w-12 h-[1px] bg-sky-500 mr-6"></span>FEATURED PROJECTS</h2>
+                <a href="https://github.com/DemianRo0308" target="_blank" class="text-slate-400 hover:text-sky-400 text-xs font-bold uppercase tracking-widest transition">View GitHub <i class="fas fa-arrow-right ml-2"></i></a>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-12">
+                <div class="card p-10 rounded-3xl">
+                    <div class="flex flex-col lg:flex-row gap-10">
+                        <div class="lg:w-1/2">
+                            <h3 class="text-2xl font-bold mb-4 italic">AI Assistant Interface</h3>
+                            <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                                Developed a multi-turn AI chatbot with context awareness using OpenAI API. Features a modern UI built with React and a high-performance REST API with FastAPI.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="tech-badge">FastAPI</span>
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">OpenAI API</span>
+                            </div>
+                            <a href="https://github.com/DemianRo0308/ai-chat-app" target="_blank" class="text-sky-400 text-xs font-bold uppercase hover:underline"><i class="fab fa-github mr-2"></i>Source Code</a>
+                        </div>
+                        <div class="lg:w-1/2 bg-slate-900 rounded-2xl border border-slate-800 flex flex-col">
+                            <div class="p-4 border-b border-slate-800 flex justify-between items-center bg-slate-800/30">
+                                <span class="text-[10px] font-bold tracking-widest uppercase text-sky-400 italic">Live Demo</span>
+                                <div class="flex gap-1.5"><div class="w-2 h-2 rounded-full bg-red-500/50"></div><div class="w-2 h-2 rounded-full bg-yellow-500/50"></div><div class="w-2 h-2 rounded-full bg-green-500/50"></div></div>
+                            </div>
+                            <div class="chat-container p-6 space-y-4" id="chatbox">
+                                <div class="bg-slate-800 text-xs p-3 rounded-xl rounded-tl-none max-w-[80%] border border-slate-700 italic">Hi! I'm Temin's Assistant. Ask me anything!</div>
+                            </div>
+                            <div class="p-3 border-t border-slate-800 flex gap-2">
+                                <input type="text" id="chat-input" placeholder="Type a message..." class="flex-1 bg-slate-800 border-none rounded-lg px-4 py-2 text-xs outline-none text-white">
+                                <button onclick="send()" class="bg-sky-600 px-4 rounded-lg text-xs"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-10 rounded-3xl flex flex-col md:flex-row gap-10 items-center">
+                    <div class="md:w-2/5 bg-slate-900 rounded-2xl aspect-video flex items-center justify-center border border-slate-800">
+                        <i class="fas fa-stream text-5xl text-slate-800"></i>
+                    </div>
+                    <div class="md:w-3/5">
+                        <h3 class="text-xl font-bold mb-3 uppercase tracking-tight">DISTRIBUTED MESSAGING SYSTEM</h3>
+                        <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                            Implemented a real-time data streaming pipeline using Apache Kafka and Docker. Optimized message partitioning and fault tolerance.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-badge">Kafka</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Distributed Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-40">
+            <h2 class="text-2xl font-bold mb-12 flex items-center"><span class="w-12 h-[1px] bg-sky-500 mr-6"></span>SKILLSET</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 card rounded-2xl">
+                    <h3 class="text-white font-bold mb-4 flex items-center uppercase tracking-wider text-xs italic"><i class="fas fa-code mr-3 text-sky-400"></i>Backend / AI</h3>
+                    <ul class="text-slate-400 space-y-3 text-xs">
+                        <li>FastAPI & Async Python</li>
+                        <li>OpenAI & LLM Integration</li>
+                        <li>React/Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="p-8 card rounded-2xl">
+                    <h3 class="text-white font-bold mb-4 flex items-center uppercase tracking-wider text-xs italic"><i class="fas fa-database mr-3 text-purple-400"></i>Data & DB</h3>
+                    <ul class="text-slate-400 space-y-3 text-xs">
+                        <li>SQLAlchemy & SQLite</li>
+                        <li>Apache Kafka & Streaming</li>
+                        <li>NoSQL (Cassandra)</li>
+                    </ul>
+                </div>
+                <div class="p-8 card rounded-2xl">
+                    <h3 class="text-white font-bold mb-4 flex items-center uppercase tracking-wider text-xs italic"><i class="fas fa-server mr-3 text-emerald-400"></i>Infra</h3>
+                    <ul class="text-slate-400 space-y-3 text-xs">
+                        <li>Docker Containerization</li>
+                        <li>Linux System Admin</li>
+                        <li>Vercel & Railway Deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="mb-40">
+            <h2 class="text-2xl font-bold mb-12 flex items-center"><span class="w-12 h-[1px] bg-sky-500 mr-6"></span>EDUCATION</h2>
+            <div class="border-l border-slate-800 ml-3 pl-10">
+                <div class="relative">
+                    <div class="absolute -left-[44.5px] top-1 w-2 h-2 rounded-full bg-sky-500 outline outline-[10px] outline-[#0f172a]"></div>
+                    <h4 class="font-bold text-xl text-white italic">University of Wisconsin-Madison</h4>
+                    <p class="text-sky-400 font-medium mb-3 italic text-sm">B.S. in Data Science & Information Science | 2022 - Present</p>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-3xl">Focused on data lifecycle and AI application architecture.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-20 text-center">
+        <div class="flex justify-center gap-10 mb-12 uppercase text-[10px] font-black tracking-widest text-slate-500">
+            <a href="https://www.linkedin.com/in/temin-ro-0308d/" target="_blank" class="hover:text-white transition">LinkedIn</a>
+            <a href="https://github.com/DemianRo0308" target="_blank" class="hover:text-white transition">GitHub</a>
+            <a href="mailto:teminro@gmail.com" class="hover:text-white transition">Email</a>
+        </div>
+        <p class="text-[10px] text-slate-700 uppercase tracking-[0.3em]">© 2026 DESIGNED & DEVELOPED BY TEMIN RO</p>
+    </footer>
+
+    <script>
+        function send() {
+            const input = document.getElementById('chat-input');
+            const chatbox = document.getElementById('chatbox');
+            if (!input.value.trim()) return;
+            const userMsg = document.createElement('div');
+            userMsg.className = "bg-sky-600 text-xs p-3 rounded-xl rounded-tr-none max-w-[80%] ml-auto";
+            userMsg.innerText = input.value;
+            chatbox.appendChild(userMsg);
+            const val = input.value;
+            input.value = "";
+            setTimeout(() => {
+                const aiMsg = document.createElement('div');
+                aiMsg.className = "bg-slate-800 text-xs p-3 rounded-xl rounded-tl-none max-w-[80%] border border-slate-700 italic";
+                aiMsg.innerText = `You said: "${val}". Backend integration is coming soon!`;
+                chatbox.appendChild(aiMsg);
+                chatbox.scrollTop = chatbox.scrollHeight;
+            }, 800);
+        }
+        document.getElementById('chat-input').addEventListener('keypress', (e) => { if(e.key === 'Enter') send(); });
+    </script>
+</body>
+</html>
